@@ -1,0 +1,20 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "boundaryimages/{name}",
+      "connection": "admadatastore_STORAGE"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "dataType": "binary",
+      "path": "boundaryimages-compressed/{name}",
+      "connection": "admadatastore_STORAGE",
+      "direction": "out"
+    }
+  ]
+}
